@@ -22,6 +22,13 @@ mensagem = condição ? "É divisível por 3 e 5 ao mesmo tempo" : "Não é divi
 console.log(mensagem);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let base = 10
+let altura = 10
+
+area = (base * altura) / 2;
+console.log("A área do triângulo é de " + area);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let celsius = 24;
 let calculo = (celsius * 1.8) + 32
 console.log("O valor em Fahrenheit é de " + calculo);
