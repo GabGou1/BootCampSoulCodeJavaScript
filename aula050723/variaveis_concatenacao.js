@@ -57,3 +57,92 @@ if(saldo > 200){
 if(saldo > 1000){
     console.log("Comprar uma Bolsa");
 }
+
+let conseguiuFazerCompra = false;
+
+if(saldo > 200){
+    console.log("Fez a compra do tênis!");
+    conseguiuFazerCompra = true;
+}
+else{
+    console.log("Sem grana suficiente!");
+    conseguiuFazerCompra = false;
+}
+
+if(conseguiuFazerCompra){
+    console.log("Transação realizada com sucesso!");
+}
+
+let num1 = 2, num2 = 3, num3 = 5;
+
+if(num1 == num2 || num2 == num3 || num3 == num1){
+    console.log("Os números não podem ser iguais!");
+}
+else if(num1 > num2 && num1 > num3){
+    if(num2 > num3){
+        console.log(num1 + " é maior que " + num2 + " que é maior que " + num3);
+    }
+    else{
+        console.log(num1 + " é maior que " + num3 + " que é maior que " + num2);
+    }
+}
+else if(num2 > num1 && num2 > num3){
+    if(num1 > num3){
+        console.log(num2 + " é maior que " + num1 + " que é maior que " + num3);
+    }
+    else{
+        console.log(num2 + " é maior que " + num3 + " que é maior que " + num1);
+    }
+}
+else{
+    if(num1 > num2){
+        console.log(num3 + " é maior que " + num1 + " que é maior que " + num2);
+    }
+    else{
+        console.log(num3 + " é maior que " + num2 + " que é maior que " + num1);
+    }
+}
+
+let mes = 10;
+
+switch(mes){
+    case 1:
+        console.log("Janeiro");
+        break;
+    case 2:
+        console.log("Fevereiro");
+        break;
+    case 3:
+        console.log("Março");
+        break;
+    case 4:
+        console.log("Abril");
+        break;
+    case 5:
+        console.log("Maio");
+        break;
+    case 6:
+        console.log("Junho");
+        break;
+    case 7:
+        console.log("Julho");
+        break;
+    case 8:
+        console.log("Agosto");
+        break;
+    case 9:
+        console.log("Setembro");
+        break;
+    case 10:
+        console.log("Outubro");
+        break;
+    case 11:
+        console.log("Novembro");
+        break;
+    case 12:
+        console.log("Dezembro");
+        break;
+    default:
+        console.log("Este mês não existe");
+        break;
+}
