@@ -25,12 +25,15 @@ else{
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Qual dos dois valores é maior
-let num1 = 2, num2 = 5;
-if(num1 > num2){
-   console.log("O primeiro valor de " + num1 + " é maior do que o segundo valor, de " + num2);
+let num1 = 2, num2 = 5, num3 = 7;
+if(num1 > num2 && num1 > num3){
+   console.log("O primeiro valor, " + num1 + " é o maior!");
 }
-else if(num2 > num1){
-   console.log("O segundo valor de " + num2 + " é maior do que o primeiro valor, de " + num1);
+else if(num2 > num1 && num2 > num3){
+   console.log("O segundo valor, " + num2 + " é o maior!");
+}
+else if(num3 > num1 && num3 > num2){
+   console.log("O Terceiro valor, " + num3 + " é o maior!");
 }
 else{
    console.log("Os valores não podem ser iguais!");
@@ -44,6 +47,35 @@ if(valor % 2 == 0){
 }
 else{
    console.log("O valor é ímpar!");
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Verifique o nome da semana para verificar se é um dia útil
+let nomeDia = "Domingo"
+
+if(nomeDia === "Sábado"){
+   console.log("Não é um dia útil!");
+}
+else if(nomeDia === "Segunda-Feira"){
+   console.log("É um dia útil!");
+}
+else if(nomeDia === "Terça-Feira"){
+   console.log("É um dia útil!");
+}
+else if(nomeDia === "Quarta-Feira"){
+   console.log("É um dia útil!");
+}
+else if(nomeDia === "Quinta-Feira"){
+   console.log("É um dia útil!");
+}
+else if(nomeDia === "Sexta-Feira"){
+   console.log("É um dia útil!");
+}
+else if(nomeDia === "Domingo"){
+   console.log("Não é um dia útil!");
+}
+else{
+   console.log("Não é um dia da semana válido!");
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
