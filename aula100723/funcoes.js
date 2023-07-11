@@ -93,3 +93,9 @@ console.log(Math.floor(2.3789)); // Arredonda para baixo
 console.log(Math.round(2.7389)); // Arredonda para o mais próximo
 console.log(Math.sqrt(625)); // Raiz quadrada
 console.log(Math.random() * 100 + 1); // [1, 100]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//autoboxing
+num = 1;
+num.toFixed(); // Coverte temporariamente a para objeto para o uso da função
