@@ -1,0 +1,20 @@
+.mensagem{
+  padding: 8px;
+  border: 2px solid blue;
+  background-color: aqua;
+  color: cadetblue;
+}
+
+.erro{
+  padding: 8px;
+  border: 2px solid red;
+  background-color: violet;
+  color: rebeccapurple;
+}
+
+.atencao{
+  padding: 8px;
+  border: 2px solid yellow;
+  background-color: yellowgreen;
+  color: greenyellow;
+}
