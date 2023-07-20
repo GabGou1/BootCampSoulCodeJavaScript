@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriel Riberi Koa">
     <title>Atividade</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Ícone -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+
 <body>
     <header>
         <h1>Lista de Tarefas</h1>
@@ -14,22 +19,25 @@
 
     <main>
         <div id="lista">
-            <table>
+            <table id="table">
                 <tr>
                     <th>Atividade</th>
+                    <th>Prioridade</th>
                     <th>Prazo</th>
                     <th>Conclusão</th>
-                </tr>
-                <tr>
-                    <td>Desenhar</td>
-                    <td>27/07/2023</td>
-                    <td><input type="checkbox"></td>
+                    <th>Remover</th>
                 </tr>
             </table>
         </div>
 
         <div id="adicionar">
-
+            <label for="descricao">Atividade:</label>
+            <input type="text" id="descricao">
+            <label for="prioridade">Prioridade (1-5):</label>
+            <input type="range" id="prioridade" min="1" max="5">
+            <label for="data">Prazo:</label>
+            <input type="date" id="data">
+            <button type="button" id="add">Adicionar</button>
         </div>
     </main>
 
@@ -37,4 +45,5 @@
         <script defer src="script.js"></script>
     </footer>
 </body>
+
 </html>
