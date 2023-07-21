@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gabriel Riberi Koa">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Todos os Livros</h1>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Ano Publicação</th>
+        <th>Gênero</th>
+      </thead>
+      <tbody id="content_table">
+
+      </tbody>
+    </table>
+
+    <div>
+      <form>
+        <legend>Adicionar Livro</legend>
+        <label for="title">Título</label>
+        <input type="text" id="title">
+        <label for="author">Autor</label>
+        <input type="text" id="author">
+        <label for="publicacao">Ano de Publicação</label>
+        <input type="date" id="publicacao">
+        <label for="genero">Gênero</label>
+        <input type="text" id="genero">
+
+        <button type="button" id="add">Adicionar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <script defer type="module" src="javascript/tabelaLivros.js"></script>
+  </footer>
+</body>
+</html>
